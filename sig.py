@@ -36,11 +36,11 @@ if sys.argv[1] == "handle_signal":
     signal.signal(signal.SIGTERM, sigterm_handler)
 
 try:
-    print "Hello"
+    print("Hello")
     i = 0
     while True:
         i += 1
-        print "Iteration #%i" % i
+        print("Iteration #%i" % i)
         sleep(1)
 finally:
-    print "Goodbye"
+    print("Goodbye")
