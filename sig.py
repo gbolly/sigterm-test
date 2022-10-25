@@ -14,6 +14,6 @@ def sigterm_handler(_signo, _stack_frame):
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, sigterm_handler)
     print("Starting script")
-    for i in range(0, 3000):
+    for i in range(0, 300000):
         print(i)
     print("Running script to test job cancellation on platform")
