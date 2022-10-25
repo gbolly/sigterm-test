@@ -13,10 +13,7 @@ def sigterm_handler(_signo, _stack_frame):
 signal.signal(signal.SIGTERM, sigterm_handler)
 
 
-def main():
-    print("Running script to test job cancellation on platform")
-    time.sleep(300)
-
 if __name__ == "__main__":
     print("Starting script")
-    main()
+    print("Running script to test job cancellation on platform")
+#     time.sleep(300)
