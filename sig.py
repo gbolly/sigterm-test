@@ -15,5 +15,6 @@ if __name__ == "__main__":
     signal.signal(signal.SIGTERM, sigterm_handler)
     print("Starting script")
     while True:
+        time.sleep(20)
         print('infinite loop')
     print("Running script to test job cancellation on platform")
