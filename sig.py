@@ -15,5 +15,5 @@ signal.signal(signal.SIGTERM, sigterm_handler)
 
 if __name__ == "__main__":
     print("Starting script")
+    time.sleep(30)
     print("Running script to test job cancellation on platform")
-#     time.sleep(300)
