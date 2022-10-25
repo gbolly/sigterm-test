@@ -1,5 +1,6 @@
 import logging
 import signal
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -12,7 +13,8 @@ signal.signal(signal.SIGTERM, sigterm_handler)
 
 
 def main():
-  logger.info("Running script to test job cancellation on platform")
+    logger.info("Running script to test job cancellation on platform")
+    time.sleep(30)
 
 if __name__ == "__main__":
     main()
