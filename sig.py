@@ -10,10 +10,9 @@ def sigterm_handler(_signo, _stack_frame):
     logging.warning('Script terminated...uploading log files')
     logging.info("Uploading log files")
 
-signal.signal(signal.SIGTERM, sigterm_handler)
-
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGTERM, sigterm_handler)
     print("Starting script")
-    time.sleep(30)
+    time.sleep(120)
     print("Running script to test job cancellation on platform")
